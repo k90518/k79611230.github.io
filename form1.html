@@ -6,9 +6,6 @@
 <link type="text/css" rel="stylesheet" href="style.css" />  
 </head>
 <body> 
-	現在時刻:<font size=+3><b>
-   <script language="JavaScript" src="time.js">
-   </script></font></b>
     <form>
 
         <div>
@@ -53,5 +50,10 @@
             <input type="submit" value="送出" />
         </div>
     </form>  
+	現在時刻:<font size=+3><b>
+   <script language="JavaScript">
+       dt = new Date();
+       document.write(dt.toLocaleString());
+   </script>
 </body>
 </html>
