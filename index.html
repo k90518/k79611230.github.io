@@ -7,6 +7,8 @@
     <title>Document</title>
     <body background="face.jpg"   text="#ffffff" >
          <script language="JavaScript">
+             var Today=new Date();
+　document.write("今天日期是 " + Today.getFullYear()+ " 年 " + (Today.getMonth()+1) + " 月 " + Today.getDate() + " 日");
 function ShowTime(){
 　var NowDate=new Date();
 　var h=NowDate.getHours();
