@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <body background="face.jpg"   text="#ffffff" >
+    <body background="face.jpg"   text="#ffffff" onload="ShowTime()">
          <script language="JavaScript" type="text/javascript">
         function ShowTime()
         {
@@ -16,6 +16,9 @@
             setTimeout('ShowTime()', 1000);
         }
     </script>
+         <form id="form1" runat="server">
+        <div id = "showbox"></div>
+    </form>
 </body>
        <h2><a href=" form1.html">請填寫個人資料</a></h2>        
                 <body>        
