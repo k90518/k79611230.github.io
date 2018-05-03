@@ -6,9 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <body background="face.jpg"   text="#ffffff">
-         現在時刻:<font size=+3><b>
-   <script language="JavaScript" src="time.js">
-   </script></font></b>
+         <script language="JavaScript">
+function ShowTime(){
+　var NowDate=new Date();
+　var h=NowDate.getHours();
+　var m=NowDate.getMinutes();
+　var s=NowDate.getSeconds();　
+　document.getElementById('showbox').innerHTML = h+'時'+m+'分'+s+'秒';
+　setTimeout('ShowTime()',1000);
+}
+</script>
+<body onload="ShowTime()">
+<div id="showbox"></div>
+</body>
     </body>
        <h2><a href=" form1.html">請填寫個人資料</a></h2>        
                 <body>        
