@@ -6,8 +6,8 @@
 <link type="text/css" rel="stylesheet" href="style.css" />  
 </head>
 	
-<body>
-    <form>
+<body onload="ShowTime()">
+    <form id="form1" runat="server">>
 	     <input type=button value="按下我, 就可以看到現在的時間"
             onClick="ShowTime(); return;">
         <div>
@@ -63,8 +63,6 @@
             setTimeout('ShowTime()', 1000);
         }
     </script>
-	<body onload="ShowTime()">
-    <form id="form1" runat="server">
         <div id = "showbox"></div>
     </form>
 </body>
